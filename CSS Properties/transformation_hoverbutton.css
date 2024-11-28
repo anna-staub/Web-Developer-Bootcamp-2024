@@ -11,8 +11,7 @@ body{
 button {
     background: none;
     color: #ffa260;
-    border: 2px solid;
-    padding: 1em 2em;
+    border: 2px solid;    padding: 1em 2em;
     font-size: 1em;
     transition: color 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 }

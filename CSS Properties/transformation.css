@@ -22,13 +22,11 @@ div:nth-of-type(2){
     width: 100px;
     height: 100px;
     background-color: magenta;
+    transition: transform 1s ease-in-out;   
     
     
 }
 
 div:nth-of-type(2):hover{
     transform: translate(20px, -40px) skew(-20deg);
-    transition: transform 1s ease-in-out;
-    
-    
 }

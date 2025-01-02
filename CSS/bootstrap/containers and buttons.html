@@ -10,7 +10,18 @@
 <body>
     <!--class "container" ist im bootstrap CSS definiert mit max-widths für verschiedene breakpoints-->
     <div class="container">
-        <h1>Container</h1>
+        <h1>Regular Container containing Buttons</h1>
+        <!-- Button-classes sind im bootstrap CSS definiert. Sie haben attribute wie background-color, border-radius etc.
+         Die classes funktionieren nicht nur für <button> Elemente sondern auch für <input> oder <a> Elemente..-->
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <!-- disabled ist ein attribute, keine class-->
+            <button type="button" class="btn btn-success" disabled >Success Disabled</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button class="btn btn-outline-warning">Outline Warning</button>
+            <button class="btn btn-outline-danger">Outline Danger</button>
+            <button class="btn btn-outline-info btn-lg">Outline Info Large</button>
+            <button class="btn btn-secondary btn-sm">Secondary Small</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto fugit, molestiae accusantium dignissimos officiis rem earum totam nobis itaque quas optio, qui quidem vitae ea velit fugiat quibusdam exercitationem.
         </p>
     </div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Badges, Alerts and Buttons</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!-- Das Grid System funktioniert nur innerhalb von container classes -->
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <div class="row">
+            <div class="col-6 bg-success">I am 6 units</div>
+            <div class="col-6 bg-primary">I am 6 units</div>
+        </div>
+        <!-- same as -->
+         <div class="row">
+            <div class="col bg-success">I am auto sized</div>
+            <div class="col bg-info">I am auto sized</div>
+         </div>
+        
+         <div class="row">
+            <div class="col-1 bg-info">I am 1 unit asdfasdfasdfasdfasdfasdfasdf</div>
+            <div class="col-10 bg-warning">I am 10 units</div>
+            <div class="col-1 bg-primary">I am 1 unitd asdfasdfasdf</div>
+         </div>
+<!-- Responsive Grid-->
+         <h3 class="display-6">Responsive Grid</h3>
+         <div class="row">
+<!-- Divs mit verschiedenen col-classes für verschiedene breakpoints-->
+            <div class="col-md-6 col-lg-4 col-xl-3 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia facere dolore, esse culpa adipisci rerum necessitatibus illo sapiente at veniam doloribus iure neque eius earum et perspiciatis nobis odio.</div>
+            <div class="col-md-6 col-lg-2 col-xl-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia facere dolore, esse culpa adipisci rerum necessitatibus illo sapiente at veniam doloribus iure neque eius earum et perspiciatis nobis odio.</div>
+            <div class="col-md-6 col-lg-4 col-xl-3 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia facere dolore, esse culpa adipisci rerum necessitatibus illo sapiente at veniam doloribus iure neque eius earum et perspiciatis nobis odio.</div>
+            <div class="col-md-6 col-lg-2 col-xl-3 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia facere dolore, esse culpa adipisci rerum necessitatibus illo sapiente at veniam doloribus iure neque eius earum et perspiciatis nobis odio.</div>
+         </div>
+<!-- Ausrichtung/Verteilung von Elementen in einem Grid (justify und align)-->
+         <h2 class="display-6">Grid Alignment</h2>
+         <div class="row align-items-center">
+            <div class="col-3 bg-danger align-self-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla officiis voluptatibus cupiditate dolorum illo perspiciatis explicabo repellendus iure? Officiis deserunt ipsa molestiae quidem repellendus suscipit amet sed porro alias.</div>
+            <div class="col-3 bg-warning align-self-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique tempore iste quos qui temporibus, beatae perferendis voluptate ad, sapiente et eveniet dicta, vel ratione quo expedita incidunt ipsa id!</div>
+            <div class="col-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, necessitatibus. Tempora, ratione. Earum, ea. Quaerat nemo sint perspiciatis laudantium ad? Alias itaque nesciunt consequuntur sunt dignissimos odio animi officiis reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque labore voluptatibus atque. Dolore minus fugiat voluptates maiores! Quo nihil fuga saepe suscipit, dolores earum similique delectus, culpa veniam esse voluptate?</div>
+            <div class="col-3 bg-info align-self-end">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem repellat amet hic accusantium pariatur eaque molestiae labore, eos nihil natus excepturi esse illum delectus consequatur alias distinctio qui quisquam rerum?</div>
+        </div>
+
+        <h2 class="display-6">Justify Content</h2>
+        <div class="row border justify-content-center justify-content-md-center justify-content-lg-between">
+            <div class="col-sm-4 bg-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi commodi saepe aspernatur minus aliquid! A aperiam sint aliquam, debitis molestias dicta vitae nisi non neque, deserunt nostrum reiciendis sequi eos.</div>
+            <div class="col-sm-4 bg-info justify-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perspiciatis dignissimos, quos quis a quod ipsam ex fugit quae, numquam itaque nam, omnis laborum saepe porro totam molestias! Modi, voluptatum.</div>
+        </div>
+<!-- Responsive Bilder mit verschiedenen col-classes für verschiedene breakpoints (row-div hat gutter-x-0)-->
+        <h2 class="display-6">Grid with responsive images</h2>
+        <div class="row border">
+            <div class="col-lg-6 col-xl-4">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1506333438925-a6203045b492?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="birds">
+            </div>
+            <div class="col-lg-6 col-xl-4">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1508809542074-6ac268a92855?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="birds">
+            </div>
+            <div class="col-lg-6 col-xl-4">
+                <img class="img-fluid" src="https://plus.unsplash.com/premium_photo-1664287369960-c24707e4e870?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="birds">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
